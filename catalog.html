@@ -55,6 +55,80 @@
 
       <section class = "main-catalog-filter">
         <h2 class = "visual-hidden">Фильтр</h2>
+        <form class = "catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class = "catalog-filter-group">
+            <legend class = "catalog-filter-title">Инфраструктура:</legend>
+            <ul class = "catalog-filter-list">
+              <li class = "catalog-filter-item">
+                <label class = "control">
+                  <input class = "control-input" type = "checkbox" name = "swimming-pool" checked>Бассейн
+                </label>
+              </li>
+              <li class = "catalog-filter-item">
+                <label class = "control">
+                  <input class = "control-input" type = "checkbox" name = "parking" checked>Парковка
+                </label>
+              </li>
+              <li class = "catalog-filter-item">
+                <label class = "control">
+                  <input class = "control-input" type = "checkbox" name = "wi-fi">Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class = "catalog-filter-group">
+            <legend class = "catalog-filter-title">Тип жилья:</legend>
+            <ul class = "catalog-filter-list">
+              <li class = "catalog-filter-item">
+                <label class = "control">
+                  <input class = "control-input" type = "radio" name = "housing-type" value = "hotel" checked>Гостиница
+                </label>
+              </li>
+              <li class = "catalog-filter-item">
+                <label class = "control">
+                  <input class = "control-input" type = "radio" name = "housing-type" value = "motel">Мотель
+                </label>
+              </li>
+              <li class = "catalog-filter-item">
+                <label class = "control">
+                  <input class = "control-input" type = "radio" name = "housing-type" value = "hotel">Апартаменты
+                </label>
+              </li>
+
+            </ul>
+          </fieldset>
+
+          <fieldset class = "catalog-filter-group">
+            <legend class = "catalog-filter-title">Стоимость, ₽:</legend>
+            <p>
+              <input class = "catalog-filter-field" name = "min-cost">
+              <input class = "catalog-filter-field" name = "max-cost">
+            </p>
+          </fieldset>
+
+          <button class = "filter-button-submit" type = "submit">Применить</button>
+          <button class = "filter-link-reset" type = "submit">Сбросить</button>
+
+        </form>
+      </section>
+
+      <section class = "filter-result">
+        <h2 class = "visually-hidden">Результат поиска</h2>
+        <div class = "filter-result-header">
+          <span class = "filter-result-title">Найдено гостиниц: 38</span>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <a href="#" class="filter-view-button" >
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a href="#" class="filter-view-button">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
       </section>
 
       <section class = "main-catalog-footer">
@@ -66,6 +140,52 @@
         </form>
       </section>
 
+      <ul class="housing-list">
+        <li class="housing-card">
+          <a class="housing-card-link" href="hotel.html">
+            <img class="housing-card-image" src="#" alt = "Изображение жилья">
+            <h3 class="housing-card-title">Amara Resort & Spa</h3>
+          </a>
+          <div>
+            <span class="housing-type">Гостиница</span>
+            <span class="hotel-card-price">От 4000 ₽</span>
+          </div>
+          <a class="housing-card-button-details button" href="#">подробнее</a>
+          <a class="housing-card-button-wishlist button" href="#">в избранное</a>
+          <div class = "housing-card-level">
+            <ul class = "housing-card-stars-list">
+              <li class = "housing-card-stars-item"></li>
+              <li class = "housing-card-stars-item"></li>
+              <li class = "housing-card-stars-item"></li>
+              <li class = "housing-card-stars-item"></li>
+            </ul>
+            <span class = "housing-card-rating">Рейтинг: 8,5</span>
+          </div>
+        </li>
+
+        <li class="housing-card">
+          <a class="housing-card-link" href="hotel.html">
+            <img class="housing-card-image" src="#" alt = "Изображение жилья">
+            <h3 class="housing-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <div>
+            <span class="housing-type">Гостиница</span>
+            <span class="hotel-card-price">От 4000 ₽</span>
+          </div>
+          <a class="housing-card-button-details button" href="#">подробнее</a>
+          <a class="housing-card-button-wishlist button" href="#">в избранное</a>
+          <div class = "housing-card-level">
+            <ul class = "housing-card-stars-list">
+              <li class = "housing-card-stars-item"></li>
+              <li class = "housing-card-stars-item"></li>
+              <li class = "housing-card-stars-item"></li>
+              <li class = "housing-card-stars-item"></li>
+            </ul>
+            <span class = "housing-card-rating">Рейтинг: 8,5</span>
+          </div>
+        </li>
+
+      </ul>
     </main>
 
     <footer class = "page-footer">
