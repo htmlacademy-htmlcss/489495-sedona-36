@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class = "page-header">
+    <header class = "page-header" data-test="header">
         <a class = "logo" href = "index.html">
-          <img src="./img/logo.svg" alt = "Логотип города Седона">
+          <img src="images/logo.svg" width = "140" height = "70" alt = "Логотип города Седона">
         </a>
         <nav class = "navigation">
           <ul class = "navigation-list">
@@ -39,13 +39,14 @@
 
     </header>
 
-    <main class = "main-index">
-      <section class="hero">
-        <h2 class="visually-hidden">О Седоне</h2>
-        <img src="./img/index-background.jpg" alt="Горы">
-        <img src="" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+    <main class = "main-index" data-test="main">
+
+      <section class="hero" data-test="hero">
+        <h2 class = "visually-hidden">О Седоне</h2>
+        <img class = "hero-img" src = "images/welcome.svg" width = "458" height = "352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
-      <section class="advantages">
+
+      <section class="advantages" data-test="advantages">
         <h2 class = "visually-hidden">Преимущества</h2>
         <p class = "lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -53,7 +54,7 @@
           <li class = "advantages-item advantages-item-wide">
             <h3 class = "advantages-title">Настоящий городок</h3>
             <p class = "advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class = "advantages-img" src="#" alt = "Домик на фоне гор">
+            <img class = "advantages-img" src = "images/real_town.jpg" width = "800" height = "385" alt = "Домик на фоне гор">
           </li>
           <li class = "advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
@@ -70,10 +71,11 @@
           <li class = "advantages-item advantages-item-wide">
             <h3 class = "advantages-title">Там есть мост дьявола</h3>
             <p class = "advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-            <img class = "advantages-img" src="#" alt = "Каньон и горы">
+            <img class = "advantages-img" src = "images/bridge_of_devil.jpg" width = "800" height = "385" alt = "Каньон и горы">
           </li>
         </ul>
       </section>
+
       <section class = "invitation">
         <h2 class = "visually-hidden">Приглашение</h2>
         <p class = "invitation-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
@@ -93,24 +95,26 @@
           </li>
         </ul>
       </section>
-      <section class = "main-index-search">
+
+      <section class = "main-index-search" data-test="search">
         <h2 class = "main-index-search-title">Поиск гостиницы</h2>
         <p class = "main-index-search-lead">Заинтересовались?</p>
         <p class = "main-index-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class = "button main-index-search" href = "#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <footer class = "main-index-footer">
+
+      <section class = "main-index-footer" data-test="subscribe">
         <h3 class = "main-index-footer-title">Подпишитесь на рассылку</h3>
         <p class = "main-index-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="main-subsribe-form" action="https://echo.htmlacademy.ru/">
           <input class = "main-catalog-email" type="email" placeholder="email@examle.com">
           <button class = "button main-index-footer-subscribe" type="submit">Подписаться</button>
         </form>
-      </footer>
+      </section>
 
     </main>
 
-    <footer class = "page-footer">
+    <footer class = "page-footer" data-test="footer">
       <section class = "page-footer-contacts">
         <h2 class = "visually-hidden">Контактная информация</h2>
         <section class = "footer-contacts-social">
@@ -133,7 +137,7 @@
         </section>
         <section class = "footer-logo">
           <h3 class = "visually-hidden">Сделано в HTML Academy</h3>
-          <a><img class = "footer-logo" src="" alt = "Логотип"></a>
+          <a><img class = "footer-logo" src = "images/HTMLAcademy.svg" width = "114.9" height = "32.9" alt = "Логотип"></a>
         </section>
 
       </section>

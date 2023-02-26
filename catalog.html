@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class = "page-header">
+    <header class = "page-header" data-test="header">
         <a class = "logo" href = "index.html">
-          <img src="./img/logo.svg" alt = "Логотип города Седона">
+          <img src="images/logo.svg" width = "140" height = "70" alt = "Логотип города Седона">
         </a>
         <nav class = "navigation">
           <ul class = "navigation-list">
@@ -39,7 +39,7 @@
 
     </header>
 
-    <main class = "main-catalog">
+    <main class = "main-catalog" data-test="main">
 
       <section class = "main-catalog-header">
         <h2 class = "main-catalog-header-title">Гостиницы Седоны</h2>
@@ -53,7 +53,7 @@
         </ol>
       </section>
 
-      <section class = "main-catalog-filter">
+      <section class = "main-catalog-filter" data-test="filter">
         <h2 class = "visual-hidden">Фильтр</h2>
         <form class = "catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class = "catalog-filter-group">
@@ -113,7 +113,7 @@
         </form>
       </section>
 
-      <section class = "filter-result">
+      <section class = "filter-result" data-test="catalog">
         <h2 class = "visually-hidden">Результат поиска</h2>
         <div class = "filter-result-header">
           <span class = "filter-result-title">Найдено гостиниц: 38</span>
@@ -131,19 +131,10 @@
         </div>
       </section>
 
-      <section class = "main-catalog-footer">
-        <h3 class = "main-catalog-footer-title">Подпишитесь на рассылку</h3>
-        <p class = "main-catalog-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="main-subsribe-form" action="https://echo.htmlacademy.ru/">
-          <input class = "main-catalog-email" type="email" placeholder="email@examle.com">
-          <button class = "button main-catalog-footer-subscribe" type="submit">Подписаться</button>
-        </form>
-      </section>
-
       <ul class="housing-list">
         <li class="housing-card">
           <a class="housing-card-link" href="hotel.html">
-            <img class="housing-card-image" src="#" alt = "Изображение жилья">
+            <img class="housing-card-image" src = "images/catalog-images/hotel-1.jpg" width = "300" height = "212" alt = "Изображение жилья">
             <h3 class="housing-card-title">Amara Resort & Spa</h3>
           </a>
           <div>
@@ -165,7 +156,7 @@
 
         <li class="housing-card">
           <a class="housing-card-link" href="hotel.html">
-            <img class="housing-card-image" src="#" alt = "Изображение жилья">
+            <img class="housing-card-image" src = "images/catalog-images/hotel-2.jpg" width = "300" height = "212" alt = "Изображение жилья">
             <h3 class="housing-card-title">Villas at Poco Diablo</h3>
           </a>
           <div>
@@ -187,7 +178,7 @@
 
         <li class="housing-card">
           <a class="housing-card-link" href="hotel.html">
-            <img class="housing-card-image" src="#" alt = "Изображение жилья">
+            <img class="housing-card-image" src = "images/catalog-images/hotel-3.jpg" width = "300" height = "212" alt = "Изображение жилья">
             <h3 class="housing-card-title">Desert Quail Inn</h3>
           </a>
           <div>
@@ -208,7 +199,7 @@
 
         <li class="housing-card">
           <a class="housing-card-link" href="hotel.html">
-            <img class="housing-card-image" src="#" alt = "Изображение жилья">
+            <img class="housing-card-image" src = "images/catalog-images/hotel-4.jpg" width = "300" height = "212" alt = "Изображение жилья">
             <h3 class="housing-card-title">GreenTree Inn</h3>
           </a>
           <div>
@@ -248,9 +239,19 @@
         </li>
 
       </ul>
+
+      <section class = "main-catalog-footer" data-test="subscribe">
+        <h3 class = "main-catalog-footer-title">Подпишитесь на рассылку</h3>
+        <p class = "main-catalog-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="main-subsribe-form" action="https://echo.htmlacademy.ru/">
+          <input class = "main-catalog-email" type="email" placeholder="email@examle.com">
+          <button class = "button main-catalog-footer-subscribe" type="submit">Подписаться</button>
+        </form>
+      </section>
+
     </main>
 
-    <footer class = "page-footer">
+    <footer class = "page-footer" data-test="footer">
       <section class = "page-footer-contacts">
         <h2 class = "visually-hidden">Контактная информация</h2>
         <section class = "footer-contacts-social">
@@ -272,12 +273,13 @@
           <a class = "footer-phone" href = "tel:88128121212">+7 (812) 812-12-12</a>
         </section>
         <section class = "footer-logo">
-          <h3 class = "visually-hidden">Логотип</h3>
+          <h3 class = "visually-hidden">Сделано в HTML Academy</h3>
+          <a><img class = "footer-logo" src = "images/HTMLAcademy.svg" width = "114.9" height = "32.9" alt = "Логотип"></a>
         </section>
 
       </section>
 
-
     </footer>
+
   </body>
 </html>
