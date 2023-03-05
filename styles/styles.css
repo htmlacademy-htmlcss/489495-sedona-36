@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background:  #FFFFFF;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+/*
+index.html
+*/
+
+/* HEADER */
+.page-header {
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.navigation-list-item {
+  list-style-type: none;
+}
+
+.navigation-link {
+  color: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.search {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+
+  width: 20px;
+  height: 20px;
+}
+
+.wishlist {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+}
+
+.hero {
+  color: #FFFFFF;
+  background-color: #000000;
+  background-image: url("../images/mountains.jpg");
+  background-repeat: no-repeat;
+}
