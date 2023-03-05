@@ -33,11 +33,12 @@ body {
   clip: rect(0 0 0 0);
 }
 
+
 /*
 index.html
 */
 
-/* HEADER */
+/* HEADER of index.html*/
 .page-header {
   color: #000000;
   background: #FFFFFF;
@@ -74,9 +75,61 @@ index.html
   background-repeat: no-repeat;
 }
 
+
+/* MAIN of index.html*/
 .hero {
+  display: flex;
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/mountains.jpg");
+  background-size: 100% auto;
   background-repeat: no-repeat;
+  width: 1200;
+  height: 485;
+}
+
+.hero-image {
+  align-content: center;
+}
+
+.advantages-header {
+  width: 1200px;
+  height: 261px;
+  text-align: center;
+}
+
+.lead {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  background: #FFFFFF;
+  text-transform: uppercase;
+  width: 620px;
+  height: 72px;
+}
+
+.lead-descr {
+  width: 651px;
+  height: 26px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  width: 175px;
+  height: 56px;
 }
