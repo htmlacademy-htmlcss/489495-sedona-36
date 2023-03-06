@@ -184,3 +184,49 @@ index.html
 .infrastructure-descr {
   color: #333333;
 }
+
+.main-index-search {
+  width: 1200px;
+  height: 406px;
+
+  background: #FFFFFF;
+}
+
+.main-index-search-lead {
+  width: 297px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.main-index-search-description {
+  width: 592px;
+  height: 52px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.main-index-search-button {
+  display: flex;
+  width: 376px;
+  height: 52px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  background: #756157;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
