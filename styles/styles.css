@@ -39,6 +39,7 @@ index.html
 */
 
 /* HEADER of index.html*/
+
 .page-header {
   color: #000000;
   background: #FFFFFF;
@@ -58,14 +59,20 @@ index.html
   text-decoration: none;
 }
 
-.search {
+.navigation-list-item {
+  position: relative;
+}
+
+.search::before {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
   color: #FFFFFF;
   background-color: #000000;
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-
-  width: 20px;
-  height: 20px;
 }
 
 .wishlist {
@@ -77,6 +84,7 @@ index.html
 
 
 /* MAIN of index.html*/
+
 .hero {
   display: flex;
   color: #FFFFFF;
@@ -282,6 +290,8 @@ index.html
 
 }
 
+/* FOOTER of index.html*/
+
 .footer-social-list {
   list-style-type: none;
 }
@@ -324,4 +334,145 @@ index.html
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-logo {
+  width: 115px;
+  height: 33px;
+}
+
+/* MAIN of catalog.html*/
+
+.main-catalog-filter {
+  width: 1200px;
+  height: 412px;
+  background-image: url("../images/Filter_background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.main-catalog-header-title {
+  width: 494.4px;
+  height: 78px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-item-to-main {
+  width: 13px;
+  height: 15px;
+}
+
+.link-to-main-page {
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/search-filter/Home.svg");
+  background-repeat: no-repeat;
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.breadcrumbs-item-greater {
+  width: 8px;
+  height: 19.94px;
+}
+
+.greater-sign {
+  width: 6.39px;
+  height: 9.94px;
+  background-image: url("../images/search-filter/Arrow.svg");
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.breadcrumbs-item-hotels {
+  width: 73px;
+  height: 21px;
+}
+
+.link-to-hotels {
+  width: 73px;
+  height: 21px;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.main-catalog-filter-settings {
+  width: 370.85px;
+  height: 157px;
+}
+
+.filter-group-infra {
+  width: 150.43px;
+  height: 157px;
+}
+
+.filter-group-housing-type {
+  width: 150.43px;
+  height: 157px;
+}
+
+.seacrh-filter {
+  width: 1060px;
+  height: 160px;
+}
+
+.left-part-of-filter {
+  width: 370.85px;
+  height: 157px;
+}
+
+.right-part-of-filter {
+  width: 549px;
+  height: 160px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.filter-group-infra {
+  width: 112px;
+  height: 101px;
+}
+
+.control-label {
+  width: 63px;
+  height: 23px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.control-input {
+  width: 20px;
+  height: 20px;
+}
+
+.catalog-filter-field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  width: 143px;
+  height: 48px;
+  color: #000000;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
 }
