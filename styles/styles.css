@@ -377,7 +377,7 @@ index.html
   margin: 0 1016px 0 0;
   padding: 0;
   align-items: center;
-  outline: 4px dotted rgb(88, 238, 51);
+  /* outline: 4px dotted rgb(88, 238, 51); */
 }
 
 .breadcrumbs-item-to-main {
@@ -397,9 +397,13 @@ index.html
 }
 
 .breadcrumbs-item-greater {
-  width: 8px;
-  height: 19.94px;
-  background-image: url("../images/search-filter/Arrow_1.svg");
+  display: flex;
+  margin: 0 10.8px 0 0;
+  /* width: 8px;
+  height: 19.94px; */
+  width: 6.39px;
+  height: 9.94px;
+  background-image: url("../images/search-filter/Arrow.svg");
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
@@ -425,6 +429,7 @@ index.html
 }
 
 .main-catalog-filter-settings {
+  margin: 40px 70px 70px 70px;
   width: 370.85px;
   height: 157px;
 }
@@ -432,6 +437,7 @@ index.html
 .filter-group-infra {
   width: 150.43px;
   height: 157px;
+
   padding: 0;
 }
 
@@ -441,11 +447,13 @@ index.html
 }
 
 .seacrh-filter {
+  display: flex;
   width: 1060px;
   height: 160px;
 }
 
 .left-part-of-filter {
+  display: flex;
   width: 370.85px;
   height: 157px;
 }
@@ -456,10 +464,15 @@ index.html
 }
 
 .catalog-filter-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  width: 112px;
+  height: 101px;
 }
 
 .catalog-filter-title {
+  margin: 0 0 32px 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -468,6 +481,7 @@ index.html
 }
 
 .filter-group-infra {
+  border: 0;
   width: 112px;
   height: 101px;
 }
@@ -481,6 +495,8 @@ index.html
 }
 
 .control-input {
+  background: #FFFFFF;
+  border-radius: 4px;
   width: 20px;
   height: 20px;
 }
