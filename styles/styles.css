@@ -353,6 +353,12 @@ index.html
   background-color: #000000;
 }
 
+.main-catalog-header {
+  width: 1060px;
+  height: 107px;
+  margin: 35px 70px 40px;
+}
+
 .main-catalog-header-title {
   width: 494.4px;
   height: 78px;
@@ -360,29 +366,42 @@ index.html
   font-size: 60px;
   line-height: 78px;
   color: #FFFFFF;
+  margin: 0 635.6px 8px 0;
 }
 
 .breadcrumbs {
+  display: flex;
   list-style-type: none;
+  width: 114px;
+  height: 21px;
+  margin: 0 1016px 0 0;
+  padding: 0;
+  align-items: center;
+  outline: 4px dotted rgb(88, 238, 51);
 }
 
 .breadcrumbs-item-to-main {
+  display: flex;
+  margin: 0 11.3PX 0 0;
   width: 13px;
   height: 15px;
 }
 
 .link-to-main-page {
+  display: block;
   width: 12px;
   height: 12px;
   background-image: url("../images/search-filter/Home.svg");
   background-repeat: no-repeat;
-  color: #000000;
-  background: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .breadcrumbs-item-greater {
   width: 8px;
   height: 19.94px;
+  background-image: url("../images/search-filter/Arrow_1.svg");
+  background-repeat: no-repeat;
+  color: #FFFFFF;
 }
 
 .greater-sign {
@@ -390,7 +409,6 @@ index.html
   height: 9.94px;
   background-image: url("../images/search-filter/Arrow.svg");
   color: #000000;
-  background: #FFFFFF;
 }
 
 .breadcrumbs-item-hotels {
@@ -414,6 +432,7 @@ index.html
 .filter-group-infra {
   width: 150.43px;
   height: 157px;
+  padding: 0;
 }
 
 .filter-group-housing-type {
