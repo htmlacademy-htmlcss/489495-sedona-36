@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class = "page-header" data-test="header">
@@ -24,14 +24,14 @@
           </ul>
 
           <ul class = "navigation-list navigation-user">
-            <li class = "navigation-item">
-              <a class = "navigation-link" href = "#"><span class = "visual-hidden">Поиск</span></a>
+            <li class = "navigation-list-item">
+              <a class = "navigation-link search" href = "#"><span class = "visually-hidden">Поиск</span></a>
             </li>
-            <li class = "navigation-item">
-              <a class = "navigation-link" href = "#"><span class = "visual-hidden">Избранное</span></a>
+            <li class = "navigation-list-item">
+              <a class = "navigation-link wishlist" href = "#"><span class = "visually-hidden">Избранное</span></a>
             </li>
-            <li class = "navigation-item">
-              <a class = "navigation-link" href = "#">Хочу сюда!</a>
+            <li class = "navigation-list-item">
+              <a class = "navigation-link " href = "#">Хочу сюда!</a>
             </li>
 
           </ul>
@@ -41,26 +41,29 @@
 
     <main class = "main-index" data-test="main">
 
-      <section class="hero" data-test="hero">
+      <section class="hero" data-test = "hero">
         <h2 class = "visually-hidden">О Седоне</h2>
-        <img class = "hero-img" src = "images/welcome.svg" width = "458" height = "352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
+        <img class = "hero-image" src = "images/welcome.svg" width = "458" height = "352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
 
       <section class="advantages" data-test="advantages">
         <h2 class = "visually-hidden">Преимущества</h2>
-        <p class = "lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class = "advantages-header">
+          <p class = "lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class = "lead-descr">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <ul class = "advantages-list">
           <li class = "advantages-item advantages-item-wide">
-            <h3 class = "advantages-title">Настоящий городок</h3>
-            <p class = "advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              <h3 class = "advantages-title">Настоящий городок</h3>
+              <p class = "advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class = "advantages-img" src = "images/real_town.jpg" width = "800" height = "385" alt = "Домик на фоне гор">
           </li>
+          <div class = "">
           <li class = "advantages-item">
             <h3 class="advantages-title">Небольшая площадь</h3>
             <p  class = "advantages-description">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class = "advantages-item">
+          <li class = "advantages-item advantages-item-beautiful-road">
             <h3 class = "advantages-title">Красивая дорога</h3>
             <p class = "advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
@@ -79,7 +82,7 @@
       <section class = "invitation">
         <h2 class = "visually-hidden">Приглашение</h2>
         <p class = "invitation-lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-        <p class>Опытный персонал и качественное обслуживание!</p>
+        <p class = "invitation-descr">Опытный персонал и качественное обслуживание!</p>
         <ul class = "infrastructure-list">
           <li class = "infrastructure-item">
             <h3 class = "infrastructure-title">Жильё</h3>
@@ -97,10 +100,10 @@
       </section>
 
       <section class = "main-index-search" data-test="search">
-        <h2 class = "main-index-search-title">Поиск гостиницы</h2>
+        <h2 class = "main-index-search-title visually-hidden">Поиск гостиницы</h2>
         <p class = "main-index-search-lead">Заинтересовались?</p>
         <p class = "main-index-search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class = "button main-index-search" href = "#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <a class = "button main-index-search-button" href = "#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
 
       <section class = "main-index-footer" data-test="subscribe">
@@ -115,33 +118,35 @@
     </main>
 
     <footer class = "page-footer" data-test="footer">
+
       <section class = "page-footer-contacts">
         <h2 class = "visually-hidden">Контактная информация</h2>
         <section class = "footer-contacts-social">
           <h3 class = "visually-hidden">Социальные сети</h3>
           <ul class = "footer-social-list">
             <li class = "footer-social-item">
-              <a class = "button" href = "https://vk.com/htmlacademy"><span class = "visually-hidden">В контакте</span></a>
+              <a class = "social-link vk" href = "https://vk.com/htmlacademy"><span class = "visually-hidden">В контакте</span></a>
             </li>
             <li class = "footer-social-item">
-              <a class = "button" href = "https://t.me/htmlacademy"><span class = "visually-hidden">Телеграм</span></a>
+              <a class = "social-link telegram" href = "https://t.me/htmlacademy"><span class = "visually-hidden">Телеграм</span></a>
             </li>
             <li class = "footer-social-item">
-              <a class = "button" href = "https://www.youtube.com/user/htmlacademyru"><span class = "visually-hidden">Youtube</span></a>
+              <a class = "social-link youtube" href = "https://www.youtube.com/user/htmlacademyru"><span class = "visually-hidden">Youtube</span></a>
             </li>
           </ul>
         </section>
+
         <section class = "footer-phone">
           <h3 class = "visually-hidden">Номер телефона</h3>
           <a class = "footer-phone" href = "tel:88128121212">+7 (812) 812-12-12</a>
         </section>
+
         <section class = "footer-logo">
           <h3 class = "visually-hidden">Сделано в HTML Academy</h3>
           <a><img class = "footer-logo" src = "images/HTMLAcademy.svg" width = "114.9" height = "32.9" alt = "Логотип"></a>
         </section>
 
       </section>
-
 
     </footer>
   </body>
